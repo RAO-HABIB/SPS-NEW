@@ -57,7 +57,7 @@ export function LoadingScreen() {
           {/* Logo in center */}
           <div className="absolute inset-6 flex items-center justify-center">
             <Image
-              src="/logo/logo.webp"
+              src="/logo/logo.png"
               alt="SPS Loading"
               width={100}
               height={100}
