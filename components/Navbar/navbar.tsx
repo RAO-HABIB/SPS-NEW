@@ -89,7 +89,7 @@ export default function Navbar() {
                       <MotionNavigationMenuItem key={item.label} value={item.label}>
                         <MotionNavigationMenuLink
                           href={item.href}
-                          className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors hover:bg-transparent"
+                          className="px-3 py-2 text-sm font-medium text-white/90 hover:text-cyan-400 transition-colors hover:bg-transparent"
                           data-active={isActive(item.href) ? "true" : "false"}
                         >
                           {item.label}
@@ -100,7 +100,7 @@ export default function Navbar() {
 
                   return (
                     <MotionNavigationMenuItem key={item.label} value={item.label}>
-                      <MotionNavigationMenuTrigger className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white data-[state=open]:text-white bg-transparent hover:bg-transparent transition-colors">
+                      <MotionNavigationMenuTrigger className="px-3 py-2 text-sm font-medium text-white/90 hover:text-cyan-400 data-[state=open]:text-cyan-400 bg-transparent hover:bg-transparent transition-colors">
                         {item.label}
                       </MotionNavigationMenuTrigger>
                       <MotionNavigationMenuContent>
@@ -194,13 +194,13 @@ export default function Navbar() {
                             {/* Simple items-based */}
                             {item.items?.map((sub) => (
                               <li key={sub.label} role="none">
-                                <MotionNavigationMenuLink
+                                <Link
                                   href={sub.href}
                                   onClick={closeAll}
                                   className="block rounded px-3 py-2 text-sm text-white/90 outline-none hover:bg-white/10 hover:text-white focus-visible:ring-2 focus-visible:ring-cyan-500"
                                 >
                                   {sub.label}
-                                </MotionNavigationMenuLink>
+                                </Link>
                               </li>
                             ))}
                           </ul>
