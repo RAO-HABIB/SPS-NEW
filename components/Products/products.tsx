@@ -190,6 +190,8 @@ export default function Products() {
 
       <style jsx global>{`
         .sps-products .products-swiper {
+          padding-top: 16px;
+          margin-top: -16px;
           padding-bottom: 42px;
         }
 
